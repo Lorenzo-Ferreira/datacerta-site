@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Data Certa — Documentação Técnica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="tecnico.css"/>
+</head>
+<body class="tech-page">
+
+<!-- NAV -->
+<nav class="nav nav-dark" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">DC</div>
+      <span>Data Certa</span>
+    </a>
+    <div class="nav-links">
+      <a href="#visao-geral">Visão Geral</a>
+      <a href="#arquitetura">Arquitetura</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#swot">SWOT</a>
+      <a href="#mercado">Mercado</a>
+      <a href="#referencias">Referências</a>
+      <a href="index.html" class="nav-cta nav-cta-outline">← Versão Pública</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#visao-geral">Visão Geral</a>
+    <a href="#arquitetura">Arquitetura</a>
+    <a href="#funcionalidades">Funcionalidades</a>
+    <a href="#swot">SWOT</a>
+    <a href="#mercado">Mercado</a>
+    <a href="#referencias">Referências</a>
+    <a href="index.html" class="mobile-cta">← Versão Pública</a>
+  </div>
+</nav>
+
+<!-- TECH HERO -->
+<section class="tech-hero">
+  <div class="tech-hero-bg"></div>
+  <div class="container">
+    <div class="tech-badge reveal">Documentação Técnica · Banca Avaliadora</div>
+    <h1 class="tech-hero-title reveal">Data Certa</h1>
+    <p class="tech-hero-sub reveal">Plataforma digital de conexão entre estabelecimentos alimentícios e consumidores para comercialização de produtos próximos da data de validade com preços reduzidos.</p>
+    <div class="tech-meta reveal">
+      <div class="tech-meta-item"><span class="tm-label">Instituição</span><span class="tm-val">FUNEC Riacho — Contagem, MG</span></div>
+      <div class="tech-meta-item"><span class="tm-label">Modalidade</span><span class="tm-val">Projeto de Conclusão · Curso Técnico Integrado</span></div>
+      <div class="tech-meta-item"><span class="tm-label">Ano</span><span class="tm-val">2026</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- VISÃO GERAL -->
+<section class="t-section" id="visao-geral">
+  <div class="container">
+    <div class="t-section-header reveal">
+      <div class="t-section-num">01</div>
+      <h2 class="t-section-title">Visão Geral do Projeto</h2>
+    </div>
+    <div class="t-card reveal">
+      <h3 class="t-card-title">Resumo Executivo</h3>
+      <p>O <strong>Data Certa</strong> é uma plataforma web desenvolvida com o objetivo de atuar como intermediadora entre estabelecimentos alimentícios (supermercados, padarias, hortifrutis, açougues e empórios) e consumidores finais, por meio da comercialização de produtos próximos à data de validade com preços reduzidos. A proposta visa simultaneamente a redução do desperdício alimentar no varejo e a democratização do acesso a alimentos de qualidade a preços acessíveis.</p>
+      <p style="margin-top:.75rem">O projeto é desenvolvido em Contagem, Minas Gerais — terceira maior cidade do estado, com 651.718 habitantes (IBGE, 2025) —, integrante da Região Metropolitana de Belo Horizonte, com 4,8 milhões de habitantes.</p>
+    </div>
+    <div class="t-grid-2">
+      <div class="t-card reveal">
+        <h3 class="t-card-title">Objetivo Geral</h3>
+        <p>Desenvolver uma plataforma digital que conecte estabelecimentos alimentícios a consumidores interessados em adquirir produtos próximos da data de validade por preços reduzidos, contribuindo com a redução do desperdício de alimentos e o incentivo ao consumo consciente.</p>
+      </div>
+      <div class="t-card reveal">
+        <h3 class="t-card-title">Problema Central</h3>
+        <p>Segundo a ABRAS (2024), 36,9% dos descartes de perecíveis no varejo brasileiro ocorrem por validade vencida. O PNUMA estima que o Brasil desperdiça entre 20 e 55 milhões de toneladas de alimentos por ano, enquanto 64 milhões de brasileiros enfrentam insegurança alimentar (ONU Brasil, 2024).</p>
+      </div>
+    </div>
+    <div class="t-card reveal">
+      <h3 class="t-card-title">Objetivos Específicos</h3>
+      <div class="t-list">
+        <div class="t-list-item"><span class="t-bullet">→</span>Criar um website responsivo onde estabelecimentos anunciem produtos próximos do vencimento em todas as categorias alimentares</div>
+        <div class="t-list-item"><span class="t-bullet">→</span>Implementar sistema de geolocalização para exibição de ofertas próximas ao endereço do usuário</div>
+        <div class="t-list-item"><span class="t-bullet">→</span>Desenvolver e-commerce simplificado com seleção individual de produtos (diferencial frente a modelos de "caixa surpresa")</div>
+        <div class="t-list-item"><span class="t-bullet">→</span>Criar painel de gestão para estabelecimentos parceiros com controle de catálogo, pedidos e métricas</div>
+        <div class="t-list-item"><span class="t-bullet">→</span>Contribuir com a redução do desperdício alimentar na RMBH, com início em Contagem</div>
+        <div class="t-list-item"><span class="t-bullet">→</span>Gerar receita adicional para estabelecimentos com produtos que seriam descartados</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARQUITETURA -->
+<section class="t-section t-section-alt" id="arquitetura">
+  <div class="container">
+    <div class="t-section-header reveal">
+      <div class="t-section-num">02</div>
+      <h2 class="t-section-title">Arquitetura e Tecnologias</h2>
+    </div>
+    <div class="t-grid-2">
+      <div class="t-card reveal">
+        <h3 class="t-card-title">Stack Front-end</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript (ES6+)</span>
+          <span class="tech-tag">Design Responsivo</span>
+          <span class="tech-tag">Mobile-first</span>
+        </div>
+        <p style="margin-top:.75rem;font-size:.875rem">Interface construída com foco em acessibilidade e performance, sem dependência de framework proprietário, garantindo compatibilidade com dispositivos de baixo custo e conexões lentas — perfil do público-alvo em Contagem.</p>
+      </div>
+      <div class="t-card reveal">
+        <h3 class="t-card-title">Stack Back-end (planejado)</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Express</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">API REST</span>
+          <span class="tech-tag">JWT Auth</span>
+        </div>
+        <p style="margin-top:.75rem;font-size:.875rem">Servidor RESTful com autenticação JWT diferenciada por tipo de usuário (consumidor / estabelecimento), banco relacional PostgreSQL para persistência de produtos, pedidos e avaliações.</p>
+      </div>
+      <div class="t-card reveal">
+        <h3 class="t-card-title">Integrações Previstas</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">Google Maps API</span>
+          <span class="tech-tag">Pix (Banco Central)</span>
+          <span class="tech-tag">Stripe / Mercado Pago</span>
+          <span class="tech-tag">Firebase Auth (OAuth)</span>
+          <span class="tech-tag">Cloudinary (imagens)</span>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <h3 class="t-card-title">Hospedagem e Infraestrutura</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">Vercel (front-end)</span>
+          <span class="tech-tag">Railway / Render (back-end)</span>
+          <span class="tech-tag">Neon DB (PostgreSQL cloud)</span>
+          <span class="tech-tag">Domínio próprio</span>
+        </div>
+        <p style="margin-top:.75rem;font-size:.875rem">Infraestrutura em nuvem com planos gratuitos para MVP, escalável conforme crescimento da plataforma.</p>
+      </div>
+    </div>
+
+    <div class="t-card reveal" style="margin-top:1.5rem">
+      <h3 class="t-card-title">Fluxo de Dados — Diagrama Simplificado</h3>
+      <div class="arch-diagram">
+        <div class="arch-row">
+          <div class="arch-box arch-blue">Consumidor<br/><small>Navegador Web</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-box arch-gray">Front-end<br/><small>HTML/CSS/JS</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-box arch-red">API REST<br/><small>Node.js / Express</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-box arch-gray">Banco de Dados<br/><small>PostgreSQL</small></div>
+        </div>
+        <div class="arch-row" style="margin-top:.75rem">
+          <div class="arch-box arch-green">Estabelecimento<br/><small>Painel Web</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-box arch-gray">Front-end<br/><small>Painel Admin</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-box arch-red">API REST<br/><small>Autenticação JWT</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-box arch-gray">Banco de Dados<br/><small>PostgreSQL</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUNCIONALIDADES -->
+<section class="t-section" id="funcionalidades">
+  <div class="container">
+    <div class="t-section-header reveal">
+      <div class="t-section-num">03</div>
+      <h2 class="t-section-title">Mapeamento de Funcionalidades</h2>
+    </div>
+    <p class="t-intro reveal">A plataforma é composta por <strong>30 telas</strong> organizadas em 4 blocos funcionais, cobrindo os fluxos completos de consumidor, estabelecimento, autenticação e páginas institucionais.</p>
+
+    <div class="blocks-grid">
+      <div class="block-card reveal">
+        <div class="block-header" style="background:#2C3E50">
+          <span class="block-num">Bloco 1</span>
+          <span class="block-title">Acesso e Autenticação</span>
+          <span class="block-count">6 telas</span>
+        </div>
+        <div class="block-items">
+          <div class="block-item"><span class="bi-num">T01</span>Landing Page (pública)</div>
+          <div class="block-item"><span class="bi-num">T02</span>Login — Consumidor</div>
+          <div class="block-item"><span class="bi-num">T03</span>Cadastro — Consumidor (+ validação de e-mail)</div>
+          <div class="block-item"><span class="bi-num">T04</span>Login — Estabelecimento</div>
+          <div class="block-item"><span class="bi-num">T05</span>Cadastro — Estabelecimento (revisão manual)</div>
+          <div class="block-item"><span class="bi-num">T06</span>Recuperação de Senha</div>
+        </div>
+      </div>
+
+      <div class="block-card reveal">
+        <div class="block-header" style="background:#C0392B">
+          <span class="block-num">Bloco 2</span>
+          <span class="block-title">Experiência do Consumidor</span>
+          <span class="block-count">12 telas</span>
+        </div>
+        <div class="block-items">
+          <div class="block-item"><span class="bi-num">T07</span>Home com geolocalização e categorias</div>
+          <div class="block-item"><span class="bi-num">T08</span>Listagem por categoria com filtros</div>
+          <div class="block-item"><span class="bi-num">T09</span>Busca e resultados dinâmicos</div>
+          <div class="block-item"><span class="bi-num">T10</span>Detalhe do produto</div>
+          <div class="block-item"><span class="bi-num">T11</span>Perfil do estabelecimento</div>
+          <div class="block-item"><span class="bi-num">T12</span>Carrinho de compras</div>
+          <div class="block-item"><span class="bi-num">T13</span>Checkout (PIX / Cartão)</div>
+          <div class="block-item"><span class="bi-num">T14</span>Confirmação com QR Code</div>
+          <div class="block-item"><span class="bi-num">T15</span>Histórico de pedidos</div>
+          <div class="block-item"><span class="bi-num">T16</span>Perfil e estatísticas do consumidor</div>
+          <div class="block-item"><span class="bi-num">T17</span>Estabelecimentos favoritos / seguindo</div>
+          <div class="block-item"><span class="bi-num">T18</span>Avaliação do estabelecimento</div>
+        </div>
+      </div>
+
+      <div class="block-card reveal">
+        <div class="block-header" style="background:#1E8449">
+          <span class="block-num">Bloco 3</span>
+          <span class="block-title">Painel do Estabelecimento</span>
+          <span class="block-count">6 telas</span>
+        </div>
+        <div class="block-items">
+          <div class="block-item"><span class="bi-num">T19</span>Dashboard com métricas em tempo real</div>
+          <div class="block-item"><span class="bi-num">T20</span>Catálogo de produtos (CRUD completo)</div>
+          <div class="block-item"><span class="bi-num">T21</span>Adicionar / editar produto</div>
+          <div class="block-item"><span class="bi-num">T22</span>Gerenciamento de pedidos por status</div>
+          <div class="block-item"><span class="bi-num">T23</span>Configurações e perfil público</div>
+          <div class="block-item"><span class="bi-num">T24</span>Relatórios de vendas e desempenho</div>
+        </div>
+      </div>
+
+      <div class="block-card reveal">
+        <div class="block-header" style="background:#1A5276">
+          <span class="block-num">Bloco 4</span>
+          <span class="block-title">Páginas Institucionais</span>
+          <span class="block-count">6 telas</span>
+        </div>
+        <div class="block-items">
+          <div class="block-item"><span class="bi-num">T25</span>Sobre Nós / Como Funciona</div>
+          <div class="block-item"><span class="bi-num">T26</span>Seja um Parceiro (captação de lojistas)</div>
+          <div class="block-item"><span class="bi-num">T27</span>FAQ — Perguntas Frequentes</div>
+          <div class="block-item"><span class="bi-num">T28</span>Central de Ajuda / Contato</div>
+          <div class="block-item"><span class="bi-num">T29</span>Termos de Uso e Política de Privacidade (LGPD)</div>
+          <div class="block-item"><span class="bi-num">T30</span>Página 404</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANÁLISE DE MERCADO -->
+<section class="t-section t-section-alt" id="mercado">
+  <div class="container">
+    <div class="t-section-header reveal">
+      <div class="t-section-num">04</div>
+      <h2 class="t-section-title">Análise de Mercado e Concorrentes</h2>
+    </div>
+
+    <div class="t-card reveal">
+      <h3 class="t-card-title">Demanda Validada</h3>
+      <p>A pesquisa de campo realizada com moradores de Contagem confirmou interesse expressivo no serviço. O crescimento da rede <strong>Delícias do Leite</strong> — fundada em 2013, 13 lojas físicas na RMBH, R$ 60 milhões movimentados em 12 meses com produtos próximos da validade — prova que o mercado mineiro já consome esse modelo. A diferença: a rede opera exclusivamente de forma física e via WhatsApp, <strong>sem plataforma digital de e-commerce</strong>. É exatamente nessa lacuna que o Data Certa atua.</p>
+    </div>
+
+    <div class="t-card reveal" style="margin-top:1rem">
+      <h3 class="t-card-title">Benchmarking de Concorrentes</h3>
+      <div class="t-table-wrap">
+        <table class="t-table">
+          <thead>
+            <tr>
+              <th>Plataforma</th>
+              <th>Modelo</th>
+              <th>Cobertura</th>
+              <th>Escolha individual</th>
+              <th>Presença online</th>
+              <th>Foco em MG</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Food To Save</strong></td>
+              <td>Sacola surpresa</td>
+              <td>Capitais nacionais</td>
+              <td class="td-no">✗ Não</td>
+              <td class="td-yes">✓ App</td>
+              <td class="td-no">✗ Não</td>
+            </tr>
+            <tr>
+              <td><strong>B4Waste</strong></td>
+              <td>Marketplace por loja</td>
+              <td>São Paulo (principal)</td>
+              <td class="td-yes">✓ Sim</td>
+              <td class="td-yes">✓ App</td>
+              <td class="td-no">✗ Não</td>
+            </tr>
+            <tr>
+              <td><strong>SuperOpa</strong></td>
+              <td>Distribuidora direta</td>
+              <td>Campinas / SP capital</td>
+              <td class="td-yes">✓ Sim</td>
+              <td class="td-yes">✓ App</td>
+              <td class="td-no">✗ Não</td>
+            </tr>
+            <tr>
+              <td><strong>Delícias do Leite</strong></td>
+              <td>Lojas físicas</td>
+              <td>Contagem / RMBH</td>
+              <td class="td-partial">~ Presencial</td>
+              <td class="td-no">✗ Só WhatsApp</td>
+              <td class="td-yes">✓ Sim</td>
+            </tr>
+            <tr class="t-row-highlight">
+              <td><strong>DATA CERTA</strong></td>
+              <td>E-commerce local</td>
+              <td>Contagem / RMBH</td>
+              <td class="td-yes">✓ Sim</td>
+              <td class="td-yes">✓ Website</td>
+              <td class="td-yes">✓ Sim</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SWOT -->
+<section class="t-section" id="swot">
+  <div class="container">
+    <div class="t-section-header reveal">
+      <div class="t-section-num">05</div>
+      <h2 class="t-section-title">Análise SWOT</h2>
+    </div>
+    <div class="swot-grid">
+      <div class="swot-card swot-s reveal">
+        <div class="swot-label">S — Forças <small>(Strengths)</small></div>
+        <ul>
+          <li>E-commerce com escolha individual do produto</li>
+          <li>Abrange todas as categorias alimentares</li>
+          <li>Primeiro player digital de anti-desperdício em MG</li>
+          <li>Proposta de valor dupla: consumidor + estabelecimento</li>
+          <li>Plataforma web sem necessidade de app</li>
+          <li>Apelo ambiental e social forte</li>
+        </ul>
+      </div>
+      <div class="swot-card swot-w reveal">
+        <div class="swot-label">W — Fraquezas <small>(Weaknesses)</small></div>
+        <ul>
+          <li>Projeto em fase inicial, recursos limitados</li>
+          <li>Dependência de adesão dos estabelecimentos</li>
+          <li>Necessidade de atualização constante de estoque</li>
+          <li>Sem histórico de marca estabelecido</li>
+          <li>Equipe de desenvolvimento pequena</li>
+        </ul>
+      </div>
+      <div class="swot-card swot-o reveal">
+        <div class="swot-label">O — Oportunidades <small>(Opportunities)</small></div>
+        <ul>
+          <li>Inflação alimentar elevando receptividade a descontos</li>
+          <li>Mercado digital de anti-desperdício ausente em MG</li>
+          <li>CEASA Minas em Contagem como ponto estratégico</li>
+          <li>Expansão para toda a RMBH (4,8 mi de habitantes)</li>
+          <li>Lei nº 15.224/2025 reforça visibilidade do tema</li>
+          <li>Consciência ambiental crescente dos consumidores</li>
+        </ul>
+      </div>
+      <div class="swot-card swot-t reveal">
+        <div class="swot-label">T — Ameaças <small>(Threats)</small></div>
+        <ul>
+          <li>Concorrentes nacionais (Food To Save, B4Waste)</li>
+          <li>Delícias do Leite com 13 lojas físicas na RMBH</li>
+          <li>Resistência cultural a produtos "próximos do vencimento"</li>
+          <li>Complexidade de manter parceiros ativos</li>
+          <li>Regulamentação sanitária e de responsabilidade civil</li>
+          <li>Possível entrada de grandes players no segmento mineiro</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ASPECTOS LEGAIS -->
+<section class="t-section t-section-alt" id="legal">
+  <div class="container">
+    <div class="t-section-header reveal">
+      <div class="t-section-num">06</div>
+      <h2 class="t-section-title">Aspectos Legais e Regulatórios</h2>
+    </div>
+    <div class="t-grid-2">
+      <div class="t-card reveal">
+        <h3 class="t-card-title">Legislação Aplicável</h3>
+        <div class="t-list">
+          <div class="t-list-item"><span class="t-bullet">→</span><strong>Lei nº 15.224/2025</strong> — regulamenta o combate ao desperdício de alimentos no varejo brasileiro, tornando o modelo do Data Certa alinhado à legislação vigente</div>
+          <div class="t-list-item"><span class="t-bullet">→</span><strong>Lei nº 13.709/2018 (LGPD)</strong> — Lei Geral de Proteção de Dados, aplicada ao tratamento de dados pessoais de usuários e estabelecimentos</div>
+          <div class="t-list-item"><span class="t-bullet">→</span><strong>RDC ANVISA nº 259/2002</strong> — regulamento técnico para rotulagem de alimentos embalados</div>
+          <div class="t-list-item"><span class="t-bullet">→</span><strong>Código de Defesa do Consumidor (Lei nº 8.078/1990)</strong> — relação entre plataforma, estabelecimento e consumidor final</div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <h3 class="t-card-title">Modelo de Responsabilidade</h3>
+        <p>O Data Certa atua como intermediador digital. A responsabilidade sobre as informações de validade, conservação e qualidade dos produtos é do <strong>estabelecimento parceiro</strong>, conforme informado nos Termos de Uso da plataforma. O consumidor é orientado a verificar a data de validade antes do consumo.</p>
+        <p style="margin-top:.75rem">Os dados pessoais coletados são tratados exclusivamente para a prestação dos serviços, com base legal de execução contratual e legítimo interesse, conforme os artigos 7º e 10 da LGPD.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERÊNCIAS -->
+<section class="t-section" id="referencias">
+  <div class="container">
+    <div class="t-section-header reveal">
+      <div class="t-section-num">07</div>
+      <h2 class="t-section-title">Referências Bibliográficas</h2>
+    </div>
+    <div class="t-card reveal">
+      <div class="ref-list">
+        <div class="ref-item">
+          <span class="ref-num">01</span>
+          <div class="ref-text">ABRAS — Associação Brasileira de Supermercados. <em>48º Ranking ABRAS / Dados Gerais do Setor Supermercadista 2024</em>. Disponível em: abras.com.br. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">02</span>
+          <div class="ref-text">PNUMA — Programa das Nações Unidas para o Meio Ambiente. <em>Relatório do Índice de Desperdício de Alimentos 2024</em>. ONU Brasil. Disponível em: brasil.un.org. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">03</span>
+          <div class="ref-text">IBGE — Instituto Brasileiro de Geografia e Estatística. <em>Contagem (MG): Dados do Município</em>. Disponível em: ibge.gov.br. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">04</span>
+          <div class="ref-text">PACTO CONTRA A FOME. <em>Desperdício de alimentos no Brasil: causas e impactos</em>. Disponível em: pactocontrafome.org. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">05</span>
+          <div class="ref-text">CENTRAL DO VAREJO. <em>Desperdício de alimentos: dados, causas e impactos no varejo alimentar</em>. Disponível em: centraldovarejo.com.br. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">06</span>
+          <div class="ref-text">FOOD TO SAVE. <em>Página oficial</em>. Google Play Store. Disponível em: play.google.com. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">07</span>
+          <div class="ref-text">B4WASTE. <em>Sobre a empresa e o modelo de negócio</em>. Disponível em: b4waste.com.br e projetodraft.com. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">08</span>
+          <div class="ref-text">SUPEROPA. <em>Informações institucionais</em>. Disponível em: play.google.com/store/apps/details?id=com.superopa. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">09</span>
+          <div class="ref-text">DELÍCIAS DO LEITE. <em>Site oficial e informações de mídia</em>. Disponível em: deliciasdoleite.com.br. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">10</span>
+          <div class="ref-text">O TEMPO. <em>Lojas de produtos perto da validade apostam em grupos de WhatsApp e crescem até 20% por ano em BH</em>. Disponível em: otempo.com.br. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">11</span>
+          <div class="ref-text">DIÁRIO DE CONTAGEM. <em>Delícias do Leite abre a décima loja em Contagem</em>. Disponível em: diariodecontagem.com.br. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">12</span>
+          <div class="ref-text">UFSCAR / FAPESP. <em>Pesquisa sobre desperdício de alimentos entre fornecedores e supermercados</em>. Disponível em: dep.ufscar.br. Acesso em: mai. 2026.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">13</span>
+          <div class="ref-text">BRASIL. Lei nº 15.224, de 7 de outubro de 2025. <em>Regulamenta o combate ao desperdício de alimentos no varejo</em>. Diário Oficial da União, Brasília, 2025.</div>
+        </div>
+        <div class="ref-item">
+          <span class="ref-num">14</span>
+          <div class="ref-text">BRASIL. Lei nº 13.709, de 14 de agosto de 2018. <em>Lei Geral de Proteção de Dados Pessoais (LGPD)</em>. Diário Oficial da União, Brasília, 2018.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER TÉCNICO -->
+<footer class="footer footer-dark">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="nav-logo-icon">DC</div>
+      <div>
+        <div style="font-weight:700;font-size:1rem">Data Certa — Documentação Técnica</div>
+        <div style="font-size:.8rem;opacity:.5">FUNEC Riacho · Contagem, MG · 2026</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#visao-geral">Visão Geral</a>
+      <a href="#arquitetura">Arquitetura</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#swot">SWOT</a>
+      <a href="#mercado">Mercado</a>
+      <a href="#referencias">Referências</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 Data Certa · Projeto Escolar<br/>
+      <a href="index.html" style="color:rgba(255,255,255,.5)">← Voltar à versão pública</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

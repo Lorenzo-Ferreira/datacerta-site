@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Data Certa — Alimentando o Futuro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">DC</div>
+      <span>Data Certa</span>
+    </a>
+    <div class="nav-links">
+      <a href="#problema">O Problema</a>
+      <a href="#solucao">A Solução</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#impacto">Impacto</a>
+      <a href="tecnico.html" class="nav-cta">Versão Técnica →</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#problema">O Problema</a>
+    <a href="#solucao">A Solução</a>
+    <a href="#como-funciona">Como Funciona</a>
+    <a href="#impacto">Impacto</a>
+    <a href="tecnico.html" class="mobile-cta">Versão Técnica →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-circle c1"></div>
+    <div class="hero-circle c2"></div>
+    <div class="hero-grain"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-badge reveal">Projeto Escolar · FUNEC Riacho · Contagem, MG</div>
+    <h1 class="hero-title reveal">
+      Menos desperdício.<br/>
+      <span class="hero-accent">Mais economia.</span>
+    </h1>
+    <p class="hero-sub reveal">
+      O Data Certa conecta mercados, padarias e hortifrutis a consumidores que buscam produtos próximos da validade com descontos reais — salvando alimentos do lixo e dinheiro do bolso.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#como-funciona" class="btn-primary">Entender o projeto</a>
+      <a href="#impacto" class="btn-ghost">Ver o impacto</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="hero-stat">
+        <span class="stat-num">55M</span>
+        <span class="stat-lbl">ton. desperdiçadas<br/>por ano no Brasil</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="stat-num">70%</span>
+        <span class="stat-lbl">de desconto<br/>máximo na plataforma</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="stat-num">4.8M</span>
+        <span class="stat-lbl">pessoas na<br/>Região Metropolitana de BH</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Rolar para descobrir</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="section" id="problema">
+  <div class="container">
+    <div class="section-label reveal">O Problema</div>
+    <div class="split-layout">
+      <div class="split-text">
+        <h2 class="section-title reveal">O Brasil desperdiça enquanto famílias economizam centavo a centavo.</h2>
+        <p class="section-body reveal">
+          Todos os anos, toneladas de alimentos em perfeito estado vão para o lixo nos supermercados, padarias e mercados do país — simplesmente porque o prazo de validade está chegando. Ao mesmo tempo, famílias brasileiras gastam em média <strong>mais de R$ 850 por mês</strong> nas compras do supermercado.
+        </p>
+        <p class="section-body reveal">
+          Segundo a Associação Brasileira de Supermercados (ABRAS), <strong>36,9% do descarte no varejo</strong> é causado por validade vencida. São produtos que podiam ter sido vendidos, consumidos, aproveitados — mas foram descartados.
+        </p>
+        <p class="section-body reveal">
+          Em Contagem e na Região Metropolitana de Belo Horizonte, com mais de 4,8 milhões de habitantes, esse problema é real e cotidiano. <strong>O Data Certa nasce para resolver isso.</strong>
+        </p>
+      </div>
+      <div class="split-visual reveal">
+        <div class="data-card dc-red">
+          <div class="data-card-num">36,9%</div>
+          <div class="data-card-txt">dos descartes no varejo são por validade vencida</div>
+          <div class="data-card-src">Fonte: ABRAS</div>
+        </div>
+        <div class="data-card dc-dark">
+          <div class="data-card-num">64M</div>
+          <div class="data-card-txt">de brasileiros em situação de insegurança alimentar</div>
+          <div class="data-card-src">Fonte: PNUMA / ONU Brasil</div>
+        </div>
+        <div class="data-card dc-outline">
+          <div class="data-card-num">R$850+</div>
+          <div class="data-card-txt">gasto médio mensal por família em supermercados</div>
+          <div class="data-card-src">Pesquisa de campo · Data Certa</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<section class="section section-alt" id="solucao">
+  <div class="container">
+    <div class="section-label reveal">A Solução</div>
+    <h2 class="section-title centered reveal">Uma plataforma simples que conecta<br/>quem tem produto a quem quer economizar.</h2>
+    <p class="section-body centered reveal">O Data Certa é um <strong>website</strong> — sem precisar baixar nenhum aplicativo — que permite que qualquer estabelecimento alimentício anuncie seus produtos próximos da validade com descontos. O consumidor escolhe, compra e retira na loja.</p>
+    <div class="cards-grid">
+      <div class="feat-card reveal">
+        <div class="feat-icon">🏪</div>
+        <h3>Para os estabelecimentos</h3>
+        <p>Mercados, padarias, hortifrutis, açougues e empórios cadastram produtos que iriam para o lixo e os vendem por um preço menor. Receita extra, zero perda.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon">🛒</div>
+        <h3>Para os consumidores</h3>
+        <p>Encontre ofertas de produtos de qualidade perto de você, escolha exatamente o que quer comprar e retire na loja com descontos de até 70%.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon">🌱</div>
+        <h3>Para o planeta</h3>
+        <p>Cada produto salvo do descarte significa menos lixo orgânico, menos emissões e um passo concreto em direção ao consumo consciente.</p>
+      </div>
+    </div>
+    <div class="diferencial-box reveal">
+      <div class="dif-title">Nosso maior diferencial</div>
+      <div class="dif-grid">
+        <div class="dif-item">
+          <span class="dif-check">✓</span>
+          <div>
+            <strong>Você escolhe o produto</strong>
+            <span>Diferente de serviços de "caixa surpresa", no Data Certa você vê exatamente o que está comprando — nome, foto, preço e data de validade.</span>
+          </div>
+        </div>
+        <div class="dif-item">
+          <span class="dif-check">✓</span>
+          <div>
+            <strong>Foco em Minas Gerais</strong>
+            <span>Os concorrentes nacionais estão em São Paulo. O Data Certa nasce para Contagem e a RMBH, que ainda não tem uma solução digital para este problema.</span>
+          </div>
+        </div>
+        <div class="dif-item">
+          <span class="dif-check">✓</span>
+          <div>
+            <strong>Todas as categorias</strong>
+            <span>Laticínios, padaria, hortifruti, carnes, congelados, mercearia — qualquer alimento pode ser anunciado na plataforma.</span>
+          </div>
+        </div>
+        <div class="dif-item">
+          <span class="dif-check">✓</span>
+          <div>
+            <strong>Sem instalar nada</strong>
+            <span>Funciona pelo navegador do celular ou computador. Qualquer pessoa com internet acessa.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="section" id="como-funciona">
+  <div class="container">
+    <div class="section-label reveal">Como Funciona</div>
+    <h2 class="section-title centered reveal">Em três passos simples.</h2>
+    <div class="steps-layout">
+      <div class="steps-col">
+        <div class="steps-subtitle reveal">Para o consumidor</div>
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h4>Informe seu endereço</h4>
+            <p>Digite seu endereço e o Data Certa mostra todas as ofertas disponíveis perto de você, ordenadas por distância.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h4>Escolha os produtos</h4>
+            <p>Navegue pelas categorias, veja a foto, o preço, a data de validade e o desconto. Adicione ao carrinho o que quiser.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h4>Retire na loja</h4>
+            <p>Após confirmar o pedido e pagar, você recebe um código. É só apresentar na loja na hora de retirar.</p>
+          </div>
+        </div>
+      </div>
+      <div class="steps-divider"></div>
+      <div class="steps-col">
+        <div class="steps-subtitle reveal">Para o estabelecimento</div>
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h4>Cadastre sua loja</h4>
+            <p>Preencha os dados do estabelecimento e aguarde a aprovação da nossa equipe — gratuito e simples.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h4>Anuncie os produtos</h4>
+            <p>Adicione foto, nome, categoria, preço original, desconto e quantidade. A plataforma calcula e exibe o preço final automaticamente.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h4>Receba os pedidos</h4>
+            <p>Acompanhe os pedidos pelo painel do estabelecimento, atualize os status e receba o pagamento diretamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TELAS PROTÓTIPO -->
+<section class="section section-alt" id="prototipo">
+  <div class="container">
+    <div class="section-label reveal">Protótipos</div>
+    <h2 class="section-title centered reveal">Veja como ficará a plataforma.</h2>
+    <p class="section-body centered reveal">O Data Certa já conta com protótipos de todas as telas — desde o login até o painel do estabelecimento. Interface moderna, minimalista e adaptada para celular e computador.</p>
+    <div class="mockup-showcase reveal">
+      <div class="mockup-phone">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ps-topbar"><div class="ps-logo">DC</div><span style="font-size:9px;font-weight:700;color:#C0392B">Data Certa</span></div>
+            <div class="ps-search">
+              <div class="ps-search-bar">📍 Seu endereço…</div>
+            </div>
+            <div class="ps-cats">
+              <div class="ps-cat" style="background:#C0392B">🍞<br/><span>Padarias</span></div>
+              <div class="ps-cat" style="background:#1E8449">🥦<br/><span>Hortifruti</span></div>
+              <div class="ps-cat" style="background:#E67E22">🛒<br/><span>Mercados</span></div>
+              <div class="ps-cat" style="background:#8E44AD">🏷️<br/><span>Promoções</span></div>
+            </div>
+            <div class="ps-label">Ofertas perto de você</div>
+            <div class="ps-card">
+              <div class="ps-prod-img">🍞</div>
+              <div class="ps-prod-info">
+                <div class="ps-prod-name">Pão de Forma</div>
+                <div class="ps-prod-store">Cantinho do Leite</div>
+                <div class="ps-prod-tag">⏱ Vence em: 2 dias</div>
+                <div class="ps-prod-price">R$ 3,99 <span class="ps-old">R$ 7,99</span> <span class="ps-badge">-50%</span></div>
+              </div>
+            </div>
+            <div class="ps-card">
+              <div class="ps-prod-img">🥛</div>
+              <div class="ps-prod-info">
+                <div class="ps-prod-name">Iogurte Integral</div>
+                <div class="ps-prod-store">Cantinho do Leite</div>
+                <div class="ps-prod-tag">⏱ Vence em: 6 dias</div>
+                <div class="ps-prod-price">R$ 4,99 <span class="ps-old">R$ 9,99</span> <span class="ps-badge">-50%</span></div>
+              </div>
+            </div>
+            <div class="ps-bottom-nav">
+              <div class="ps-nav-item active">🏠<br/>Início</div>
+              <div class="ps-nav-item">🔍<br/>Buscar</div>
+              <div class="ps-nav-item">🛒<br/>Carrinho</div>
+              <div class="ps-nav-item">👤<br/>Perfil</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mockup-info">
+        <div class="mockup-feature reveal">
+          <div class="mf-num">30</div>
+          <div class="mf-text">telas prototipadas, desde o login até o painel do estabelecimento</div>
+        </div>
+        <div class="mockup-feature reveal">
+          <div class="mf-num">2</div>
+          <div class="mf-text">tipos de usuário: consumidor e estabelecimento parceiro</div>
+        </div>
+        <div class="mockup-feature reveal">
+          <div class="mf-num">4</div>
+          <div class="mf-text">blocos de funcionalidades: acesso, consumidor, parceiro e institucional</div>
+        </div>
+        <a href="tecnico.html#prototipo" class="btn-primary reveal" style="display:inline-block;text-decoration:none;margin-top:1.5rem">Ver todos os protótipos →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACTO -->
+<section class="section impact-section" id="impacto">
+  <div class="impact-bg">
+    <div class="impact-circle i1"></div>
+    <div class="impact-circle i2"></div>
+  </div>
+  <div class="container">
+    <div class="section-label reveal" style="color:rgba(255,255,255,.6)">Impacto</div>
+    <h2 class="section-title centered reveal" style="color:#fff">O que o Data Certa pode mudar.</h2>
+    <div class="impact-grid">
+      <div class="impact-card reveal">
+        <div class="impact-icon">💰</div>
+        <h3>Para as famílias</h3>
+        <p>Economia real nas compras do mês, com produtos de qualidade e desconto de até 70% sem abrir mão da segurança alimentar.</p>
+      </div>
+      <div class="impact-card reveal">
+        <div class="impact-icon">🏪</div>
+        <h3>Para o comércio local</h3>
+        <p>Transformar perdas em receita. Produtos que seriam descartados passam a gerar retorno financeiro e novos clientes.</p>
+      </div>
+      <div class="impact-card reveal">
+        <div class="impact-icon">🌍</div>
+        <h3>Para o meio ambiente</h3>
+        <p>Redução concreta do desperdício alimentar, menos lixo orgânico em aterros e uma contribuição direta para a sustentabilidade.</p>
+      </div>
+      <div class="impact-card reveal">
+        <div class="impact-icon">🏙️</div>
+        <h3>Para Contagem e a RMBH</h3>
+        <p>Uma solução digital criada localmente, para resolver um problema real da nossa cidade e região, com potencial de crescimento para toda a área metropolitana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE O PROJETO -->
+<section class="section" id="sobre">
+  <div class="container">
+    <div class="section-label reveal">Sobre o Projeto</div>
+    <div class="about-layout">
+      <div class="about-text">
+        <h2 class="section-title reveal">Um projeto escolar com impacto real.</h2>
+        <p class="section-body reveal">O Data Certa é desenvolvido por alunos do Curso Técnico Integrado da <strong>FUNEC Riacho</strong>, em Contagem, MG. O projeto nasceu de uma pesquisa de campo com moradores da região, que revelou o alto gasto mensal das famílias em supermercados e o interesse real em alternativas mais econômicas.</p>
+        <p class="section-body reveal">Mais do que um trabalho escolar, o Data Certa é uma proposta concreta de solução para um problema que afeta diretamente a comunidade onde ele foi criado.</p>
+        <div class="quote reveal">
+          <span class="quote-mark">"</span>
+          <p>Data Certa, alimentando o futuro.</p>
+        </div>
+      </div>
+      <div class="about-info reveal">
+        <div class="info-item">
+          <span class="info-label">Instituição</span>
+          <span class="info-val">FUNEC Riacho</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Cidade</span>
+          <span class="info-val">Contagem, MG</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Público alvo</span>
+          <span class="info-val">Consumidores e estabelecimentos da RMBH</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Ano</span>
+          <span class="info-val">2026</span>
+        </div>
+        <a href="tecnico.html" class="btn-primary" style="display:block;text-align:center;text-decoration:none;margin-top:1.5rem">Ver versão técnica →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="nav-logo-icon">DC</div>
+      <div>
+        <div style="font-weight:700;font-size:1rem">Data Certa</div>
+        <div style="font-size:.8rem;opacity:.6">Alimentando o futuro</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#problema">O Problema</a>
+      <a href="#solucao">A Solução</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#impacto">Impacto</a>
+      <a href="tecnico.html">Versão Técnica</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 Data Certa · FUNEC Riacho · Contagem, MG<br/>
+      Projeto escolar — Curso Técnico Integrado
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
