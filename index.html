@@ -6,26 +6,54 @@
 <title>Data Certa — Alimentando o Futuro</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
+<!-- SVG LOGO (reutilizado via <use>) -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="logo-basket" viewBox="0 0 44 44">
+    <!-- cesta -->
+    <path d="M8 20 Q7 32 10 35 Q22 40 34 35 Q37 32 36 20 Z"
+          fill="none" stroke="#BE3224" stroke-width="2.2" stroke-linejoin="round"/>
+    <!-- alça esquerda -->
+    <path d="M14 20 Q12 13 18 10" fill="none" stroke="#BE3224" stroke-width="2" stroke-linecap="round"/>
+    <!-- alça direita -->
+    <path d="M30 20 Q32 13 26 10" fill="none" stroke="#BE3224" stroke-width="2" stroke-linecap="round"/>
+    <!-- barra horizontal da cesta -->
+    <line x1="8" y1="26" x2="36" y2="26" stroke="#BE3224" stroke-width="1.5" stroke-dasharray="2.5 2.5"/>
+    <!-- pão -->
+    <ellipse cx="17" cy="22" rx="4.5" ry="3" fill="#E8A87C" opacity=".9"/>
+    <!-- folha/vegetal -->
+    <path d="M23 19 Q27 17 28 22 Q25 23 23 19Z" fill="#2D6A4F" opacity=".85"/>
+    <!-- queijinho -->
+    <rect x="22" y="22" width="6" height="4" rx="1.5" fill="#F4C95D" opacity=".9"/>
+    <!-- traço de marca (check) -->
+    <circle cx="34" cy="13" r="5" fill="#BE3224"/>
+    <polyline points="31.5,13 33.2,15 37,10.5" fill="none"
+              stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
 
 <!-- NAV -->
 <nav class="nav" id="navbar">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <div class="nav-logo-icon">DC</div>
-      <span>Data Certa</span>
+      <svg class="logo-mark" aria-hidden="true"><use href="#logo-basket"/></svg>
+      <div class="logo-text-wrap">
+        <span class="logo-name">Data Certa</span>
+        <span class="logo-tagline">alimentando o futuro</span>
+      </div>
     </a>
     <div class="nav-links">
       <a href="#problema">O Problema</a>
       <a href="#solucao">A Solução</a>
       <a href="#como-funciona">Como Funciona</a>
       <a href="#impacto">Impacto</a>
-      <a href="tecnico.html" class="nav-cta">Versão Técnica →</a>
+      <a href="tecnico.html" class="nav-cta">Informações Técnicas →</a>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -34,22 +62,23 @@
     <a href="#solucao">A Solução</a>
     <a href="#como-funciona">Como Funciona</a>
     <a href="#impacto">Impacto</a>
-    <a href="tecnico.html" class="mobile-cta">Versão Técnica →</a>
+    <a href="tecnico.html" class="mobile-cta">Informações Técnicas →</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg">
-    <div class="hero-circle c1"></div>
-    <div class="hero-circle c2"></div>
+    <div class="hero-blob b1"></div>
+    <div class="hero-blob b2"></div>
+    <div class="hero-blob b3"></div>
     <div class="hero-grain"></div>
   </div>
   <div class="hero-inner">
     <div class="hero-badge reveal">Projeto Escolar · FUNEC Riacho · Contagem, MG</div>
     <h1 class="hero-title reveal">
       Menos desperdício.<br/>
-      <span class="hero-accent">Mais economia.</span>
+      <em>Mais economia.</em>
     </h1>
     <p class="hero-sub reveal">
       O Data Certa conecta mercados, padarias e hortifrutis a consumidores que buscam produtos próximos da validade com descontos reais — salvando alimentos do lixo e dinheiro do bolso.
@@ -61,27 +90,25 @@
     <div class="hero-stats reveal">
       <div class="hero-stat">
         <span class="stat-num">55M</span>
-        <span class="stat-lbl">ton. desperdiçadas<br/>por ano no Brasil</span>
+        <span class="stat-lbl">toneladas desperdiçadas<br/>por ano no Brasil</span>
       </div>
-      <div class="hero-stat-divider"></div>
       <div class="hero-stat">
         <span class="stat-num">70%</span>
         <span class="stat-lbl">de desconto<br/>máximo na plataforma</span>
       </div>
-      <div class="hero-stat-divider"></div>
       <div class="hero-stat">
-        <span class="stat-num">4.8M</span>
-        <span class="stat-lbl">pessoas na<br/>Região Metropolitana de BH</span>
+        <span class="stat-num">4,8M</span>
+        <span class="stat-lbl">pessoas na Região<br/>Metropolitana de BH</span>
       </div>
     </div>
   </div>
   <div class="hero-scroll">
-    <span>Rolar para descobrir</span>
+    <span>rolar</span>
     <div class="scroll-line"></div>
   </div>
 </section>
 
-<!-- PROBLEMA -->
+<!-- O PROBLEMA -->
 <section class="section" id="problema">
   <div class="container">
     <div class="section-label reveal">O Problema</div>
@@ -89,7 +116,7 @@
       <div class="split-text">
         <h2 class="section-title reveal">O Brasil desperdiça enquanto famílias economizam centavo a centavo.</h2>
         <p class="section-body reveal">
-          Todos os anos, toneladas de alimentos em perfeito estado vão para o lixo nos supermercados, padarias e mercados do país — simplesmente porque o prazo de validade está chegando. Ao mesmo tempo, famílias brasileiras gastam em média <strong>mais de R$ 850 por mês</strong> nas compras do supermercado.
+          Todos os anos, toneladas de alimentos em perfeito estado vão para o lixo nos supermercados, padarias e mercados do país — simplesmente porque o prazo de validade está chegando. Ao mesmo tempo, famílias brasileiras gastam em média <strong>mais de R$&nbsp;850 por mês</strong> nas compras do supermercado.
         </p>
         <p class="section-body reveal">
           Segundo a Associação Brasileira de Supermercados (ABRAS), <strong>36,9% do descarte no varejo</strong> é causado por validade vencida. São produtos que podiam ter sido vendidos, consumidos, aproveitados — mas foram descartados.
@@ -98,19 +125,19 @@
           Em Contagem e na Região Metropolitana de Belo Horizonte, com mais de 4,8 milhões de habitantes, esse problema é real e cotidiano. <strong>O Data Certa nasce para resolver isso.</strong>
         </p>
       </div>
-      <div class="split-visual reveal">
-        <div class="data-card dc-red">
+      <div class="split-visual">
+        <div class="data-card dc-red reveal">
           <div class="data-card-num">36,9%</div>
           <div class="data-card-txt">dos descartes no varejo são por validade vencida</div>
           <div class="data-card-src">Fonte: ABRAS</div>
         </div>
-        <div class="data-card dc-dark">
+        <div class="data-card dc-dark reveal">
           <div class="data-card-num">64M</div>
           <div class="data-card-txt">de brasileiros em situação de insegurança alimentar</div>
           <div class="data-card-src">Fonte: PNUMA / ONU Brasil</div>
         </div>
-        <div class="data-card dc-outline">
-          <div class="data-card-num">R$850+</div>
+        <div class="data-card dc-outline reveal">
+          <div class="data-card-num">R$&nbsp;850+</div>
           <div class="data-card-txt">gasto médio mensal por família em supermercados</div>
           <div class="data-card-src">Pesquisa de campo · Data Certa</div>
         </div>
@@ -119,29 +146,31 @@
   </div>
 </section>
 
-<!-- SOLUÇÃO -->
+<!-- A SOLUÇÃO -->
 <section class="section section-alt" id="solucao">
   <div class="container">
     <div class="section-label reveal">A Solução</div>
     <h2 class="section-title centered reveal">Uma plataforma simples que conecta<br/>quem tem produto a quem quer economizar.</h2>
     <p class="section-body centered reveal">O Data Certa é um <strong>website</strong> — sem precisar baixar nenhum aplicativo — que permite que qualquer estabelecimento alimentício anuncie seus produtos próximos da validade com descontos. O consumidor escolhe, compra e retira na loja.</p>
+
     <div class="cards-grid">
       <div class="feat-card reveal">
-        <div class="feat-icon">🏪</div>
+        <span class="feat-icon">🏪</span>
         <h3>Para os estabelecimentos</h3>
         <p>Mercados, padarias, hortifrutis, açougues e empórios cadastram produtos que iriam para o lixo e os vendem por um preço menor. Receita extra, zero perda.</p>
       </div>
       <div class="feat-card reveal">
-        <div class="feat-icon">🛒</div>
+        <span class="feat-icon">🛒</span>
         <h3>Para os consumidores</h3>
         <p>Encontre ofertas de produtos de qualidade perto de você, escolha exatamente o que quer comprar e retire na loja com descontos de até 70%.</p>
       </div>
       <div class="feat-card reveal">
-        <div class="feat-icon">🌱</div>
+        <span class="feat-icon">🌱</span>
         <h3>Para o planeta</h3>
         <p>Cada produto salvo do descarte significa menos lixo orgânico, menos emissões e um passo concreto em direção ao consumo consciente.</p>
       </div>
     </div>
+
     <div class="diferencial-box reveal">
       <div class="dif-title">Nosso maior diferencial</div>
       <div class="dif-grid">
@@ -237,26 +266,27 @@
   </div>
 </section>
 
-<!-- TELAS PROTÓTIPO -->
+<!-- PROTÓTIPO -->
 <section class="section section-alt" id="prototipo">
   <div class="container">
     <div class="section-label reveal">Protótipos</div>
     <h2 class="section-title centered reveal">Veja como ficará a plataforma.</h2>
     <p class="section-body centered reveal">O Data Certa já conta com protótipos de todas as telas — desde o login até o painel do estabelecimento. Interface moderna, minimalista e adaptada para celular e computador.</p>
-    <div class="mockup-showcase reveal">
+    <div class="mockup-showcase">
       <div class="mockup-phone">
         <div class="phone-frame">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <div class="ps-topbar"><div class="ps-logo">DC</div><span style="font-size:9px;font-weight:700;color:#C0392B">Data Certa</span></div>
-            <div class="ps-search">
-              <div class="ps-search-bar">📍 Seu endereço…</div>
+            <div class="ps-topbar">
+              <svg width="18" height="18" viewBox="0 0 44 44" aria-hidden="true"><use href="#logo-basket"/></svg>
+              <span style="font-size:8px;font-weight:600;color:#BE3224;letter-spacing:.03em">Data Certa</span>
             </div>
+            <div class="ps-search"><div class="ps-search-bar">📍 Seu endereço…</div></div>
             <div class="ps-cats">
-              <div class="ps-cat" style="background:#C0392B">🍞<br/><span>Padarias</span></div>
-              <div class="ps-cat" style="background:#1E8449">🥦<br/><span>Hortifruti</span></div>
-              <div class="ps-cat" style="background:#E67E22">🛒<br/><span>Mercados</span></div>
-              <div class="ps-cat" style="background:#8E44AD">🏷️<br/><span>Promoções</span></div>
+              <div class="ps-cat" style="background:#BE3224">🍞<br/><span>Padarias</span></div>
+              <div class="ps-cat" style="background:#2D6A4F">🥦<br/><span>Hortifruti</span></div>
+              <div class="ps-cat" style="background:#C47A3A">🛒<br/><span>Mercados</span></div>
+              <div class="ps-cat" style="background:#6B3FA0">🏷️<br/><span>Promoções</span></div>
             </div>
             <div class="ps-label">Ofertas perto de você</div>
             <div class="ps-card">
@@ -264,8 +294,8 @@
               <div class="ps-prod-info">
                 <div class="ps-prod-name">Pão de Forma</div>
                 <div class="ps-prod-store">Cantinho do Leite</div>
-                <div class="ps-prod-tag">⏱ Vence em: 2 dias</div>
-                <div class="ps-prod-price">R$ 3,99 <span class="ps-old">R$ 7,99</span> <span class="ps-badge">-50%</span></div>
+                <div class="ps-prod-tag">⏱ Vence em 2 dias</div>
+                <div class="ps-prod-price">R$ 3,99 <span class="ps-old">R$ 7,99</span> <span class="ps-badge">−50%</span></div>
               </div>
             </div>
             <div class="ps-card">
@@ -273,8 +303,8 @@
               <div class="ps-prod-info">
                 <div class="ps-prod-name">Iogurte Integral</div>
                 <div class="ps-prod-store">Cantinho do Leite</div>
-                <div class="ps-prod-tag">⏱ Vence em: 6 dias</div>
-                <div class="ps-prod-price">R$ 4,99 <span class="ps-old">R$ 9,99</span> <span class="ps-badge">-50%</span></div>
+                <div class="ps-prod-tag">⏱ Vence em 6 dias</div>
+                <div class="ps-prod-price">R$ 4,99 <span class="ps-old">R$ 9,99</span> <span class="ps-badge">−50%</span></div>
               </div>
             </div>
             <div class="ps-bottom-nav">
@@ -299,7 +329,7 @@
           <div class="mf-num">4</div>
           <div class="mf-text">blocos de funcionalidades: acesso, consumidor, parceiro e institucional</div>
         </div>
-        <a href="tecnico.html#prototipo" class="btn-primary reveal" style="display:inline-block;text-decoration:none;margin-top:1.5rem">Ver todos os protótipos →</a>
+        <a href="tecnico.html" class="btn-primary reveal" style="display:inline-flex;text-decoration:none;margin-top:2rem">Ver documentação técnica →</a>
       </div>
     </div>
   </div>
@@ -308,38 +338,38 @@
 <!-- IMPACTO -->
 <section class="section impact-section" id="impacto">
   <div class="impact-bg">
-    <div class="impact-circle i1"></div>
-    <div class="impact-circle i2"></div>
+    <div class="impact-blob i1"></div>
+    <div class="impact-blob i2"></div>
   </div>
   <div class="container">
-    <div class="section-label reveal" style="color:rgba(255,255,255,.6)">Impacto</div>
-    <h2 class="section-title centered reveal" style="color:#fff">O que o Data Certa pode mudar.</h2>
+    <div class="section-label reveal" style="color:rgba(255,255,255,.45)">Impacto</div>
+    <h2 class="section-title centered reveal" style="color:#fff;max-width:100%">O que o Data Certa pode mudar.</h2>
     <div class="impact-grid">
       <div class="impact-card reveal">
-        <div class="impact-icon">💰</div>
+        <span class="impact-icon">💰</span>
         <h3>Para as famílias</h3>
         <p>Economia real nas compras do mês, com produtos de qualidade e desconto de até 70% sem abrir mão da segurança alimentar.</p>
       </div>
       <div class="impact-card reveal">
-        <div class="impact-icon">🏪</div>
+        <span class="impact-icon">🏪</span>
         <h3>Para o comércio local</h3>
         <p>Transformar perdas em receita. Produtos que seriam descartados passam a gerar retorno financeiro e novos clientes.</p>
       </div>
       <div class="impact-card reveal">
-        <div class="impact-icon">🌍</div>
+        <span class="impact-icon">🌍</span>
         <h3>Para o meio ambiente</h3>
         <p>Redução concreta do desperdício alimentar, menos lixo orgânico em aterros e uma contribuição direta para a sustentabilidade.</p>
       </div>
       <div class="impact-card reveal">
-        <div class="impact-icon">🏙️</div>
+        <span class="impact-icon">🏙️</span>
         <h3>Para Contagem e a RMBH</h3>
-        <p>Uma solução digital criada localmente, para resolver um problema real da nossa cidade e região, com potencial de crescimento para toda a área metropolitana.</p>
+        <p>Uma solução digital criada localmente para resolver um problema real da nossa cidade, com potencial de crescimento para toda a área metropolitana.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SOBRE O PROJETO -->
+<!-- SOBRE -->
 <section class="section" id="sobre">
   <div class="container">
     <div class="section-label reveal">Sobre o Projeto</div>
@@ -370,7 +400,7 @@
           <span class="info-label">Ano</span>
           <span class="info-val">2026</span>
         </div>
-        <a href="tecnico.html" class="btn-primary" style="display:block;text-align:center;text-decoration:none;margin-top:1.5rem">Ver versão técnica →</a>
+        <a href="tecnico.html" class="btn-primary" style="display:block;text-align:center;text-decoration:none;margin-top:1.8rem">Ver documentação técnica →</a>
       </div>
     </div>
   </div>
@@ -380,10 +410,10 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-logo">
-      <div class="nav-logo-icon">DC</div>
-      <div>
-        <div style="font-weight:700;font-size:1rem">Data Certa</div>
-        <div style="font-size:.8rem;opacity:.6">Alimentando o futuro</div>
+      <svg class="logo-mark" aria-hidden="true" style="width:32px;height:32px"><use href="#logo-basket"/></svg>
+      <div class="logo-text-wrap">
+        <span class="logo-name">Data Certa</span>
+        <span class="logo-tagline">alimentando o futuro</span>
       </div>
     </div>
     <div class="footer-links">
@@ -391,7 +421,7 @@
       <a href="#solucao">A Solução</a>
       <a href="#como-funciona">Como Funciona</a>
       <a href="#impacto">Impacto</a>
-      <a href="tecnico.html">Versão Técnica</a>
+      <a href="tecnico.html">Documentação Técnica</a>
     </div>
     <div class="footer-copy">
       © 2026 Data Certa · FUNEC Riacho · Contagem, MG<br/>
